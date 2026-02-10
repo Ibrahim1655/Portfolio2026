@@ -30,7 +30,7 @@ export default function Skills() {
               key={skill.name}
               initial={{ opacity: 0, y: 24 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.4, delay: index * 0.05, ease: [0.25, 0.46, 0.45, 0.94] }}
+              transition={{ duration: 0.4, delay: index * 0.05, ease: [0.25, 0.46, 0.45, 0.94] as const }}
               whileHover={{ y: -4, scale: 1.02 }}
               className="group flex flex-col items-center justify-center p-6 bg-zinc-900/50 rounded-2xl border border-amber-500/20 hover:border-amber-500/50 hover:shadow-lg hover:shadow-amber-500/5 transition-colors transition-shadow duration-300"
             >
