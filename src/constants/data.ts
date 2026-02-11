@@ -16,7 +16,9 @@ export const HERO_DATA = {
   },
   socials: {
     email: "ibrahimdrame165@gmail.com",
-    cv: "/img/CV_STAGE_MMI.pdf" // Chemin à adapter selon où sera placé le fichier
+    cv: "/img/CV_STAGE_MMI.pdf",
+    github: "https://github.com/Ibrahim1655",
+    linkedin: "https://www.linkedin.com/in/ibrahimdrame16/"
   }
 };
 

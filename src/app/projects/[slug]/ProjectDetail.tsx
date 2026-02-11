@@ -14,7 +14,7 @@ export default function ProjectDetail({ project }: { project: Project }) {
   const year = project.date.split(' ')[1] || project.date;
 
   return (
-    <main className="min-h-screen bg-black text-white pt-24 pb-32">
+    <main className="min-h-screen bg-gray-50 dark:bg-black text-gray-900 dark:text-white pt-24 pb-32">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Retour aux projets */}
         <motion.div
@@ -25,7 +25,7 @@ export default function ProjectDetail({ project }: { project: Project }) {
         >
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 text-zinc-400 hover:text-amber-400 transition-colors font-medium"
+            className="inline-flex items-center gap-2 text-gray-600 dark:text-zinc-400 hover:text-gray-900 dark:hover:text-amber-400 transition-colors font-medium"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -41,12 +41,12 @@ export default function ProjectDetail({ project }: { project: Project }) {
           transition={{ duration: 0.4, delay: 0.1 }}
           className="mb-16"
         >
-          <div className="flex flex-wrap gap-6 text-sm text-zinc-400 mb-4">
+          <div className="flex flex-wrap gap-6 text-sm text-gray-600 dark:text-zinc-400 mb-4">
             <span>{project.techs.join(' • ')}</span>
             <span>{year}</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">{project.title}</h1>
-          <p className="text-xl text-zinc-400">{project.description}</p>
+          <p className="text-xl text-gray-600 dark:text-zinc-400">{project.description}</p>
         </motion.div>
 
         {/* Zone des screens */}
@@ -69,7 +69,7 @@ export default function ProjectDetail({ project }: { project: Project }) {
                 transition={{ duration: 0.4, delay: 0.3 + index * 0.08 }}
                 className={`group ${index === 0 && screens.length >= 3 ? 'md:col-span-2' : ''}`}
               >
-                <div className="relative w-full rounded-2xl overflow-hidden bg-zinc-900 border border-amber-500/20">
+                <div className="relative w-full rounded-2xl overflow-hidden bg-white dark:bg-zinc-900 border border-gray-200 dark:border-amber-500/20 shadow-sm dark:shadow-none">
                   {isVideo(src) ? (
                     <video
                       src={src}
@@ -85,7 +85,7 @@ export default function ProjectDetail({ project }: { project: Project }) {
                         src={src}
                         alt={`${project.title} - Capture ${index + 1}`}
                         fill
-                        className="object-contain bg-zinc-900 group-hover:scale-[1.01] transition-transform duration-500"
+                        className="object-contain bg-gray-100 dark:bg-zinc-900 group-hover:scale-[1.01] transition-transform duration-500"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 432px"
                       />
                     </div>
@@ -105,17 +105,17 @@ export default function ProjectDetail({ project }: { project: Project }) {
         >
           <div className="grid md:grid-cols-[120px_1fr] gap-8">
             <div>
-              <p className="text-sm font-medium text-amber-400/80 uppercase tracking-wider">Année</p>
-              <p className="text-xl font-semibold text-white mt-1">{year}</p>
+              <p className="text-sm font-medium text-gray-600 dark:text-amber-400/80 uppercase tracking-wider">Année</p>
+              <p className="text-xl font-semibold text-gray-900 dark:text-white mt-1">{year}</p>
             </div>
             <div className="space-y-12">
               <div>
-                <h2 className="text-2xl font-bold text-white mb-4">À propos du projet</h2>
-                <p className="text-zinc-400 leading-relaxed">{project.context}</p>
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">À propos du projet</h2>
+                <p className="text-gray-600 dark:text-zinc-400 leading-relaxed">{project.context}</p>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-white mb-4">Le défi</h2>
-                <p className="text-zinc-400 leading-relaxed">{project.difficulties}</p>
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Le défi</h2>
+                <p className="text-gray-600 dark:text-zinc-400 leading-relaxed">{project.difficulties}</p>
               </div>
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function ProjectDetail({ project }: { project: Project }) {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-amber-500 text-black font-bold rounded-full hover:bg-amber-400 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white font-bold rounded-full hover:bg-gray-800 transition-colors"
             >
               Voir le projet en ligne
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

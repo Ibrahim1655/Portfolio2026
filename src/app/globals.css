@@ -15,8 +15,12 @@
 
 html {
   scroll-behavior: smooth;
-  color-scheme: dark;
+  color-scheme: light dark;
   -webkit-overflow-scrolling: touch;
+}
+
+html.dark {
+  color-scheme: dark;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -41,21 +45,33 @@ a, button, [role="button"], input[type="submit"], input[type="button"] {
   cursor: var(--cursor-pointer);
 }
 
-/* Custom Scrollbar - léger */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
 
 ::-webkit-scrollbar-track {
+  background: #f9fafb;
+}
+
+html.dark ::-webkit-scrollbar-track {
   background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3f3f46;
+  background: #9ca3af;
   border-radius: 3px;
 }
 
+html.dark ::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+}
+
 ::-webkit-scrollbar-thumb:hover {
+  background: #737373;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
   background: #d97706;
 }
 
