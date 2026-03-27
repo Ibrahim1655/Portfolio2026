@@ -57,6 +57,18 @@ export function getProjectBySlug(slug: string): Project | undefined {
 
 export const PROJECTS_DATA: Project[] = [
   {
+    id: 'dataviz-logement-social',
+    title: 'DataViz Logement Social',
+    description: 'SAÉ 401 (BUT Informatique) : tableau de bord pour analyser le logement social en France (INSEE, RPLS) sur 100 départements et trois années (2021–2023). Application non hébergée : aperçu via les captures d\'écran ci-dessous.',
+    context: 'Projet universitaire (SAÉ 401) : un tableau de bord destiné aux décideurs publics pour analyser et visualiser les données du logement social en France, issues de l\'INSEE et du RPLS, couvrant les 100 départements sur la période 2021–2023. L\'objectif était de permettre à des profils non techniques de tirer des constats concrets sur l\'état du logement social par région et par département, grâce à des visualisations claires et comparables (indicateurs clés, démographie, logement, évolutions). Côté front : React 19, Vite, Tailwind CSS 4, Chart.js, TanStack Query, React Router et Axios. Côté back : Symfony exposant une API REST pour les données.',
+    difficulties: 'Structurer et agréger des jeux de données territoriaux volumineux tout en gardant des temps de réponse acceptables, avec mise en cache et requêtes côté client (TanStack Query). Concevoir des graphiques Chart.js lisibles (échelles, légendes, couleurs) pour des non-spécialistes. Gérer le filtrage par année de référence et la navigation (accueil, régions, départements, comparateur) avec React Router. Coordonner le contrat API entre Symfony et le front (Axios, gestion des erreurs). Assurer une interface cohérente en dark mode et un export visuel (PNG) pour certaines vues.',
+    techs: ['React', 'Vite', 'Tailwind CSS', 'Chart.js', 'TanStack Query', 'React Router', 'Axios', 'Symfony', 'API REST'],
+    date: 'Mars 2026',
+    link: '',
+    image: '/img/dataviz_logement_tableau.png',
+    screens: ['/img/dataviz_logement_regions.png', '/img/dataviz_logement_departement.png', '/img/dataviz_logement_evolution.png'],
+  },
+  {
     id: 'sushy-crousty',
     title: 'Sushy Crousty',
     description: 'Création d\'un site web pour un restaurant de sushis dans le cadre d\'une SAE (Situation d\'Apprentissage et d\'Évaluation). Projet réalisé à 5.',
