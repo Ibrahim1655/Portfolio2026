@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# notes de travail
+portfolio_qzic_stage.md
+Capture*écran*.png
