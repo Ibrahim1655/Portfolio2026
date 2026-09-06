@@ -145,20 +145,6 @@ export const PROJECTS_DATA: Project[] = [
     image: "/img/Composition 1_1.mp4",
   },
   {
-    id: "site-auto-ecole",
-    title: "Site vitrine pour auto école",
-    description:
-      "Lors d'un stage d'une durée de 4 semaine, j'ai créé un site vitrine pour une auto-école.",
-    context:
-      "Projet réalisé lors d'un stage professionnel de 4 semaines dans une auto-école. L'objectif était de créer un site vitrine moderne et complet pour améliorer la présence en ligne de l'établissement. Le site devait présenter les services de l'auto-école (formation au permis B, conduite accompagnée, stages de perfectionnement), les tarifs, les informations pratiques et permettre aux visiteurs de prendre contact facilement. Il fallait créer une interface attrayante qui inspire confiance aux futurs élèves tout en étant fonctionnelle et facile à naviguer. Ce projet m'a permis de travailler sur un projet réel avec des contraintes client et des délais à respecter.",
-    difficulties:
-      "Créer des animations et effets visuels subtils et professionnels pour rendre le site attractif tout en maintenant des performances optimales et un temps de chargement rapide. Optimiser les images pour le web (compression, formats modernes) sans perdre en qualité visuelle. Adapter le design pour être responsive sur tous les appareils (mobile, tablette, desktop) tout en conservant une expérience utilisateur cohérente. Gérer les contraintes de temps du stage tout en livrant un produit de qualité professionnelle. Comprendre les besoins réels du client et les traduire en fonctionnalités web pertinentes.",
-    techs: ["Tailwindcss", "Javascript", "Html", "Css"],
-    date: "Juillet 2025",
-    link: "https://mlaroute.fr",
-    image: "/img/mlaroute.png",
-  },
-  {
     id: "site-reservation-materiel",
     title: "Site de réservation de matériel",
     description:
