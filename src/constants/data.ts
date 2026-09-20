@@ -58,6 +58,20 @@ export function getProjectBySlug(slug: string): Project | undefined {
 
 export const PROJECTS_DATA: Project[] = [
   {
+    id: "oasis-garden-meaux",
+    title: "Oasis Garden Meaux",
+    description:
+      "Site de réservation de créneaux piscine pour l'été, avec paiement en ligne via Stripe et confirmation par e-mail via Resend.",
+    context:
+      "Projet réalisé pour Oasis Garden Meaux, un espace piscine proposant des réservations de créneaux durant la saison estivale. Le site permet aux clients de consulter les disponibilités, choisir un créneau et régler en ligne. Le paiement est géré par Stripe (création de session de paiement, webhooks pour confirmer la réservation) et un e-mail de confirmation est automatiquement envoyé via Resend après chaque transaction réussie.",
+    difficulties:
+      "Mettre en place un flux de paiement fiable avec Stripe : création de session, gestion des webhooks pour ne confirmer la réservation qu'après paiement effectif, et gestion des cas d'échec ou d'annulation. Intégrer Resend pour l'envoi automatique d'e-mails transactionnels (confirmation, rappel). Gérer la disponibilité des créneaux en temps réel pour éviter les doubles réservations.",
+    techs: ["Next.js", "TypeScript", "Stripe", "Resend", "Tailwind CSS"],
+    date: "Été 2026",
+    link: "https://www.oasisgardenmeaux.com/",
+    image: "/img/oasis_garden.png",
+  },
+  {
     id: "stage-qzic",
     title: "Stage — LeadingFrog (Qzic.me)",
     description:
